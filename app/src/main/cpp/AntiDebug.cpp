@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #include <string>
 #include <cstring>
-
+#include <pthread.h>
 
 using namespace std;
 

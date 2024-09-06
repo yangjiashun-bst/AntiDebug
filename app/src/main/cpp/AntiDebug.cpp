@@ -332,7 +332,7 @@ MACRO_HIDE_SYMBOL char* AntiDebug::getPackageName(JNIEnv* env)
     methodId = env->GetMethodID(context_class, "getPackageName", "()Ljava/lang/String;");
     jstring package_name = (jstring)env->CallObjectMethod(g_context, methodId);
     if (package_name == NULL) {
-        LOG_PRINT_E("checkPackageName package_name is NULL");
+        LOG_PRINT_E("checkPackageName package_name is NULL1");
         return NULL;
     }
     env->DeleteLocalRef(context_class);
